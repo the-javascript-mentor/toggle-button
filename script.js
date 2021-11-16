@@ -15,3 +15,9 @@ document
   .addEventListener("click", (event) => {
     console.log("Toggle button 3 was toggled", event.target.checked);
   });
+
+document
+  .getElementById("toggle-button-dark-mode")
+  .addEventListener("click", (event) => {
+    document.querySelector("body").classList.toggle("dark");
+  });
