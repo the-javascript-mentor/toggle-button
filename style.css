@@ -23,4 +23,37 @@ main {
   width: 100%;
   border: 1px solid red;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-button-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-wrapper {
+  width: 60px;
+  border: 1px solid hsl(0, 0%, 75%);
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 20%);
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.toggle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(0, 0%, 65%);
+  background-color: hsl(0, 0%, 75%);
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 50%);
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  transition: left 0.25s;
+}
+
+input[type="checkbox"]:checked + .toggle-wrapper > .toggle {
+  left: calc(100% - 30px);
 }
