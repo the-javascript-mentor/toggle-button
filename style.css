@@ -21,7 +21,7 @@ main {
 .toggle-button-wrapper {
   max-width: 600px;
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid hsl(0, 0%, 75%);
   padding: 10px;
   display: flex;
   justify-content: space-between;
